@@ -5,7 +5,7 @@ version = 0.1
 [default]
 [default.global]
 [default.global.parameters]
-stack_name = "thumbnail-generator"
+stack_name = "hello-world"
 
 [default.build]
 [default.build.parameters]
@@ -21,6 +21,10 @@ lint = true
 capabilities = "CAPABILITY_IAM"
 confirm_changeset = true
 resolve_s3 = true
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1nu4xlnzgrsbz"
+s3_prefix = "hello-world"
+region = "us-east-2"
+image_repositories = []
 
 [default.package]
 [default.package.parameters]
