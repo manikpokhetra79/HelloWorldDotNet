@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  SAM Template for thumbnail-generator
+  SAM Template for dotnet hello world app
 
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
@@ -10,11 +10,6 @@ Globals:
     MemorySize: 128
 
 Resources:
-  # Bucket resources
-  ThumbnailS3Bucket:
-    Type: AWS::S3::Bucket
-    Properties:
-      BucketName: s3-dotnet-thumbnail-generator
   # Function resources
   SampleFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
